@@ -3,14 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Free Website</title>
+    <title>LearnHub - Your Educational Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial; text-align: center; margin-top: 50px; }
-        h1 { color: #4CAF50; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
+        body { background: linear-gradient(to right, #a1c4fd, #c2e9fb); }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        header p { font-size: 1.2rem; }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2e7d32;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav a:hover { color: #ffeb3b; }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            color: #333;
+        }
+        .hero h2 { font-size: 2rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #ff9800;
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover { background-color: #e65100; }
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 50px 20px;
+            gap: 20px;
+        }
+        .feature-card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 30px;
+            width: 250px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .feature-card:hover { transform: translateY(-10px); }
+        .feature-card h3 { color: #4CAF50; margin-bottom: 15px; }
+        .feature-card p { color: #555; }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #2e7d32;
+            color: white;
+            margin-top: 50px;
+        }
+        @media (max-width: 768px) {
+            .features { flex-direction: column; align-items: center; }
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Free Website!</h1>
-    <p>This website is hosted on GitHub Pages with a free domain from Freenom.</p>
+
+    <header>
+        <h1>LearnHub</h1>
+        <p>Your Gateway to Fun & Interactive Learning</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Resources</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Welcome to LearnHub!</h2>
+        <p>Explore interactive lessons, quizzes, and resources to enhance your learning journey.</p>
+        <a href="#" class="btn">Get Started</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>Math Fun</h3>
+            <p>Learn math through games, puzzles, and interactive lessons.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Science Experiments</h3>
+            <p>Explore science with fun experiments and simple projects.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Reading & Writing</h3>
+            <p>Improve your reading and writing skills with interactive exercises.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Quizzes & Tests</h3>
+            <p>Test your knowledge with fun quizzes and track your progress.</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 LearnHub. All Rights Reserved.
+    </footer>
+
 </body>
 </html>
+
